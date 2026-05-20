@@ -117,7 +117,6 @@ KubeJEIEvents.subtypes(event => {
     event.hide(Item.of("immersiveengineering:plate_copper"))
     event.hide(Item.of("immersiveengineering:ingot_aluminum"))
     event.hide(Item.of("immersiveengineering:nugget_aluminum"))
-    event.hide(Item.of("immersiveengineering:raw_aluminum"))
     event.hide(Item.of("immersiveengineering:plate_aluminum"))
     event.hide(Item.of("immersiveengineering:ingot_lead"))
     event.hide(Item.of("immersiveengineering:nugget_lead"))
