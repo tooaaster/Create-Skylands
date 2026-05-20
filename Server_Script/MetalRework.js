@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+// event.remove({})
+
 
 // remove recipes 
 event.remove({output: 'tfmg:molten_steel'})
@@ -11,6 +13,137 @@ event.remove({output: 'createbigcannons:steel_ingot_block'})
 event.remove({output: 'createbigcannons:steel_scrap'})
 event.remove({id: 'tfmg:casting/steel'})
 event.remove({id: 'alloyed:mixing/steel_ingot'})
+event.remove({id: 'alloyed:crafting/forge'})
+event.remove({output: 'immersiveengineering:steel_trapdoor'})
+event.remove({output: 'alloyed:steel_trapdoor'})
+event.remove({output: 'alloyed:steel_ingot'})
+event.remove({output: 'alloyed:steel_block'})
+event.remove({output: 'alloyed:steel_nugget'})
+event.remove({output: 'alloyed:steel_sheet'})
+event.remove({output: 'alloyed:steel_casing'})
+event.remove({output: 'immersiveengineering:storage_steel'})
+event.remove({output: 'immersiveengineering:steel_door'})
+event.remove({output: 'createbigcannons:steel_block'})
+event.remove({output: 'immersiveengineering:pickaxe_steel'})
+event.remove({output: 'immersiveengineering:shovel_steel'})
+event.remove({output: 'immersiveengineering:axe_steel'})
+event.remove({output: 'immersiveengineering:hoe_steel'})
+event.remove({output: 'immersiveengineering:sword_steel'})
+event.remove({output: 'tfmg:steel_sword'})
+event.remove({output: 'tfmg:steel_pickaxe'})
+event.remove({output: 'tfmg:steel_axe'})
+event.remove({output: 'tfmg:steel_shovel'})
+event.remove({output: 'tfmg:steel_hoe'})
+
+
+
+
+// Steel Tools 
+event.replaceInput(
+  { input: 'tfmg:steel_sword' },    
+  'tfmg:steel_sword',  
+  Ingredient.of('alloyed:steel_sword') 
+)
+
+event.replaceInput(
+  { input: 'immersiveengineering:sword_steel' },    
+  'immersiveengineering:sword_steel',  
+  Ingredient.of('alloyed:steel_sword') 
+
+)
+
+event.shaped(
+  Item.of('alloyed:steel_sword'), // arg 1: output
+  [
+    ' A ',
+    ' A ', // arg 2: the shape (array of strings)
+    ' B '
+  ],
+  {
+    A: 'tfmg:steel_ingot',
+    B: 'immersiveengineering:stick_treated'
+  }
+)
+
+event.shaped(
+  Item.of('alloyed:steel_pickaxe'), // arg 1: output
+  [
+    'AAA',
+    ' B ', // arg 2: the shape (array of strings)
+    ' B '
+  ],
+  {
+    A: 'tfmg:steel_ingot',
+    B: 'immersiveengineering:stick_treated'
+  }
+)
+
+event.shaped(
+  Item.of('alloyed:steel_axe'), // arg 1: output
+  [
+    'AA ',
+    'AB ', // arg 2: the shape (array of strings)
+    ' B '
+  ],
+  {
+    A: 'tfmg:steel_ingot',
+    B: 'immersiveengineering:stick_treated'
+  }
+)
+event.shaped(
+  Item.of('alloyed:steel_shovel'), // arg 1: output
+  [
+    ' A ',
+    ' B ', // arg 2: the shape (array of strings)
+    ' B '
+  ],
+  {
+    A: 'tfmg:steel_ingot',
+    B: 'immersiveengineering:stick_treated'
+  }
+)
+event.shaped(
+  Item.of('alloyed:steel_hoe'), // arg 1: output
+  [
+    'AA ',
+    ' B ', // arg 2: the shape (array of strings)
+    ' B '
+  ],
+  {
+    A: 'tfmg:steel_ingot',
+    B: 'immersiveengineering:stick_treated'
+  }
+)
+event.shaped(
+  Item.of('alloyed:steel_shears'), // arg 1: output
+  [
+    ' A ',
+    'A  ', // arg 2: the shape (array of strings)
+    '   '
+  ],
+  {
+    A: 'tfmg:steel_ingot'
+  }
+)
+
+event.shaped(
+  Item.of('alloyed:steel_fishing_rod'), // arg 1: output
+  [
+    '  A',
+    ' AB', // arg 2: the shape (array of strings)
+    'A B'
+  ],
+  {
+    A: 'tfmg:steel_ingot',
+    B: 'immersiveengineering:hemp_fiber'
+  }
+)
+
+
+
+// replace items
+
+
 
 
 // Make Molten Steel
