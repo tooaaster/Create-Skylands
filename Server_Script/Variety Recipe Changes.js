@@ -76,20 +76,8 @@ event.recipes.create.sequenced_assembly(
       ])
     .transitionalItem('tfmg:unfinished_steel_mechanism')
     .loops(3)
-
 })
-
-
-
-//test shapeless recipe
-/* event.shapeless(
-  Item.of('minecraft:dandelion', 3), // arg 1: output
-  [
-    'minecraft:bone_meal',
-    'minecraft:yellow_dye', 	       // arg 2: the array of inputs
-    '3x minecraft:ender_pearl'
-  ]
-)
+//coke oven locked behind both cast iron and brass
 event.shaped(
   Item.of('tfmg:coke_oven', 3), // arg 1: output
   [
@@ -102,7 +90,79 @@ event.shaped(
     B: 'create:brass_ingot',  //arg 3: the mapping object
     C: 'tfmg:cast_iron_fluid_tank'
   }
-) */
+) 
+
+
+//crowns steelification
+event.remove({ output: 'crowns:heat_exchanger'})
+event.shaped(
+  Item.of('crowns:heat_exchanger', 3), // arg 1: output
+  [
+    ' A ',
+    'ABA', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'tfmg:heavy_plate',
+    B: 'tfmg:aluminum_pipe',  //arg 3: the mapping object
+  }
+) 
+event.remove({ output: 'crowns:steam_input'})
+event.shaped(
+  Item.of('crowns:steam_input', 3), // arg 1: output
+  [
+    ' A ',
+    'ABA', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'tfmg:aluminum_pipe',
+    B: 'tfmg:steel_casing',  //arg 3: the mapping object
+  }
+)
+event.remove({ output: 'crowns:steam_collector'})
+event.shaped(
+  Item.of('crowns:steam_collector', 3), // arg 1: output
+  [
+    ' A ',
+    'ABA', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'tfmg:steel_casing',
+    B: 'tfmg:aluminum_pipe',  //arg 3: the mapping object
+  }
+)
+event.remove({ output: 'crowns:turbine_stage'})
+event.recipes.create.mechanical_crafting('crowns:turbine_stage', [
+  '    D    ',
+  '  D D D  ',
+  ' D DDD D ',
+  '  DCBCD  ',
+  'DDDBABDDD',
+  '  DCBCD  ',
+  ' D DDD D ',
+  '  D D D  ',
+  '    D    '
+], {
+  A: 'create:andesite_alloy_block',
+  B: '#c:storage_blocks/steel',
+  C: 'tfmg:steel_ingot',
+  D: 'tfmg:heavy_plate'
+})
+
+})
+
+
+//test shapeless recipe
+/* event.shapeless(
+  Item.of('minecraft:dandelion', 3), // arg 1: output
+  [
+    'minecraft:bone_meal',
+    'minecraft:yellow_dye', 	       // arg 2: the array of inputs
+    '3x minecraft:ender_pearl'
+  ]
+)*/
 
 //test vating
 /* event.custom({
