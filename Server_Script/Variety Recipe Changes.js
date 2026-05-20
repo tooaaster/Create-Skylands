@@ -103,8 +103,8 @@ event.shaped(
     ' A '
   ],
   {
-    A: 'tfmg:heavy_plate',
-    B: 'tfmg:aluminum_pipe',  //arg 3: the mapping object
+    A: 'tfmg:aluminum_plate',
+    B: 'tfmg:steel_pipe',  //arg 3: the mapping object
   }
 ) 
 event.remove({ output: 'crowns:steam_input'})
@@ -133,6 +133,20 @@ event.shaped(
     B: 'tfmg:aluminum_pipe',  //arg 3: the mapping object
   }
 )
+event.remove({ output: 'crowns:compressor'})
+event.shaped(
+  Item.of('crowns:compressor', 3), // arg 1: output
+  [
+    'CAC',
+    'BBB', // arg 2: the shape (array of strings)
+    'CAC'
+  ],
+  {
+    A: 'tfmg:steel_casing',
+    B: 'tfmg:aluminum_mechanical_pump',  //arg 3: the mapping object
+    C: 'tfmg:rubber_sheet'
+  }
+)
 event.remove({ output: 'crowns:turbine_stage'})
 event.recipes.create.mechanical_crafting('crowns:turbine_stage', [
   '    D    ',
@@ -150,6 +164,26 @@ event.recipes.create.mechanical_crafting('crowns:turbine_stage', [
   C: 'tfmg:steel_ingot',
   D: 'tfmg:heavy_plate'
 })
+
+//plastic fix
+event.remove({id: 'tfmg:casting/plastic_sheet'})
+event.custom({
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 144,
+      "fluid": "tfmg:molten_plastic"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "tfmg:plastic_sheet"
+    }
+  ]
+})
+
 
 })
 
