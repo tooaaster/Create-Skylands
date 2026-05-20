@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
 event.remove({ output: 'createbigcannons:cast_iron_ingot' })
 event.remove({ output: 'createbigcannons:steel_ingot' })
 event.remove({ output: 'createbigcannons:cast_iron_nugget' })
-event.remove({ output: 'createbigcannons:steel_nugget' })
+event.remove({ output: 'createbigcannons:steel_scrap' })
 event.remove({ output: 'createbigcannons:steel_block' })
 event.remove({ output: 'tfmg:coke_oven' })
 event.remove({ output: 'tfmg:pumpjack_crank' })
@@ -27,7 +27,7 @@ event.remove({ output: 'createbigcannons:steel_scrap'})
 event.remove({ id: 'create:splashing/gravel'})
 event.remove({ id: 'createbigcannons:iron_to_cast_iron_block'})
 event.remove({ id: 'createbigcannons:cast_iron_block'})
-
+event.remove({ id: 'createdieselgenerators:mixing/biodiesel'})
 
 
 //duplicate metal block transmutation
@@ -40,6 +40,21 @@ event.stonecutting('createbigcannons:cast_iron_block', '#c:storage_blocks/cast_i
 
 event.recipes.create.splashing([CreateItem.of('minecraft:flint', 0.25), CreateItem.of('create:copper_nugget', 0.12), CreateItem.of('minecraft:iron_nugget', 0.12)], 'minecraft:gravel')
 
+//crowns steelification
+event.remove({ output: 'crowns:heat_exchanger'})
+event.shaped(
+  Item.of('tfmg:coke_oven', 3), // arg 1: output
+  [
+    'BAB',
+    'ACA', // arg 2: the shape (array of strings)
+    'BAB'
+  ],
+  {
+    A: 'tfmg:cast_iron_ingot',
+    B: 'create:brass_ingot',  //arg 3: the mapping object
+    C: 'tfmg:cast_iron_fluid_tank'
+  }
+) 
 
 //drills
 event.recipes.create.mechanical_crafting('createoreexcavation:drilling_machine', [
@@ -65,7 +80,6 @@ event.recipes.create.mechanical_crafting('createoreexcavation:extractor', [
   G: 'create:mechanical_drill',
   H: 'create:metal_girder'
 })
-
 //steel mechanism
 event.recipes.create.sequenced_assembly(
       'tfmg:steel_mechanism', 'create:precision_mechanism',
@@ -76,7 +90,8 @@ event.recipes.create.sequenced_assembly(
       ])
     .transitionalItem('tfmg:unfinished_steel_mechanism')
     .loops(3)
-})
+
+
 //coke oven locked behind both cast iron and brass
 event.shaped(
   Item.of('tfmg:coke_oven', 3), // arg 1: output
@@ -103,7 +118,7 @@ event.shaped(
     ' A '
   ],
   {
-    A: 'tfmg:aluminum_plate',
+    A: 'tfmg:aluminum_sheet',
     B: 'tfmg:steel_pipe',  //arg 3: the mapping object
   }
 ) 
@@ -197,6 +212,7 @@ event.custom({
     '3x minecraft:ender_pearl'
   ]
 )*/
+
 
 //test vating
 /* event.custom({
