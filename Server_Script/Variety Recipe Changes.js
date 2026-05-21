@@ -30,12 +30,7 @@ event.remove({ id: 'createbigcannons:cast_iron_block'})
 event.remove({ id: 'createdieselgenerators:mixing/biodiesel'})
 
 
-//duplicate metal block transmutation
-event.stonecutting('immersiveengineering:storage_steel', '#c:storage_blocks/steel')
-event.stonecutting('tfmg:steel_block', '#c:storage_blocks/steel')
-event.stonecutting('createbigcannons:steel_block', '#c:storage_blocks/steel')
-event.stonecutting('tfmg:cast_iron_block', '#c:storage_blocks/cast_iron')
-event.stonecutting('createbigcannons:cast_iron_block', '#c:storage_blocks/cast_iron')
+
 
 
 event.recipes.create.splashing([CreateItem.of('minecraft:flint', 0.25), CreateItem.of('create:copper_nugget', 0.12), CreateItem.of('minecraft:iron_nugget', 0.12)], 'minecraft:gravel')
@@ -198,6 +193,67 @@ event.custom({
     }
   ]
 })
+
+//phantom rail accessablility fix
+event.remove({output: 'railways:track_phantom'})
+event.recipes.create.sequenced_assembly(
+  // Outputs:
+  [
+    CreateItem.of('32x railways:track_phantom'), // Main output, will appear in JEI as the result
+  ],
+  // Input:
+  'minecraft:glass', 
+  // Sequence:
+  [
+    event.recipes.create.deploying('railways:track_incomplete_phantom', ['railways:track_incomplete_phantom', 'minecraft:iron_nugget',]),
+    event.recipes.create.deploying('railways:track_incomplete_phantom', ['railways:track_incomplete_phantom', 'minecraft:iron_nugget',]),
+    event.recipes.create.pressing('railways:track_incomplete_phantom', 'railways:track_incomplete_phantom')
+  ]
+)
+.transitionalItem('railways:track_incomplete_phantom') // Set the transitional item
+.loops(1) // Set the number of loops
+
+//phantom wide
+event.remove({output: 'railways:track_phantom_wide'})
+event.recipes.create.sequenced_assembly(
+  // Outputs:
+  [
+    CreateItem.of('railways:track_phantom_wide'), // Main output, will appear in JEI as the result
+  ],
+  // Input:
+  'railways:track_phantom', 
+  // Sequence:
+  [
+    event.recipes.create.cutting('railways:track_incomplete_phantom_wide', 'railways:track_incomplete_phantom_wide'),
+    event.recipes.create.deploying('railways:track_incomplete_phantom_wide', ['railways:track_incomplete_phantom_wide', 'minecraft:iron_nugget',]),
+    event.recipes.create.pressing('railways:track_incomplete_phantom_wide', 'railways:track_incomplete_phantom_wide')
+  ]
+)
+.transitionalItem('railways:track_incomplete_phantom_wide') // Set the transitional item
+.loops(1) // Set the number of loops
+
+//phantom narrow
+event.remove({output: 'railways:track_phantom_narrow'})
+event.recipes.create.sequenced_assembly(
+  // Outputs:
+  [
+    CreateItem.of('2x railways:track_phantom_narrow'), // Main output, will appear in JEI as the result
+  ],
+  // Input:
+  'railways:track_phantom', 
+  // Sequence:
+  [
+    event.recipes.create.cutting('railways:track_incomplete_phantom_narrow', 'railways:track_incomplete_phantom_narrow'),
+    event.recipes.create.pressing('railways:track_incomplete_phantom_narrow', 'railways:track_incomplete_phantom_narrow')
+  ]
+)
+.transitionalItem('railways:track_incomplete_phantom_narrow') // Set the transitional item
+.loops(1) // Set the number of loops
+
+
+
+
+
 
 
 })

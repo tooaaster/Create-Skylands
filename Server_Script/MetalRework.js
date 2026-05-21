@@ -4,12 +4,12 @@ ServerEvents.recipes(event => {
 
 
 // remove recipes 
-event.remove({output: 'tfmg:molten_steel'})
-event.remove({input: 'tfmg:molten_steel'})
+event.remove({output: Fluid.of('tfmg:molten_steel')})
+event.remove({input: Fluid.of('tfmg:molten_steel')})
 event.remove({mod: 'createmetalwork'})
 event.remove({type: 'createbigcannons:melting'})
 event.remove({output: 'createbigcannons:steel_ingot'})
-event.remove({output: 'createbigcannons:steel_ingot_block'})
+event.remove({output: 'createbigcannons:steel_block'})
 event.remove({output: 'createbigcannons:steel_scrap'})
 event.remove({id: 'tfmg:casting/steel'})
 event.remove({id: 'alloyed:mixing/steel_ingot'})
@@ -44,6 +44,38 @@ event.remove({id: 'alloyed:mixing/bronze_ingot'})
 event.remove({id: 'alloyed:mixing/bronze_ingot_x3'})
 event.remove({input: 'immersiveengineering:raw_aluminum'})
 event.remove({id: 'createbigcannons:compacting/forge_cast_iron_block'})
+event.remove({id: 'createbigcannons:compacting/iron_to_cast_iron_block'})
+event.remove({ output: 'overgeared:steel_ingot' })
+event.remove({ output: 'overgeared:steel_nugget' })
+event.remove({ output: 'createbigcannons:bronze_ingot' })
+event.remove({id: 'immersiveengineering:crafting/ingot_lead_to_storage__lead'})
+event.remove({id: 'immersiveengineering:crafting/ingot_nickel_to_storage__nickel'})
+event.remove({id: 'immersiveengineering:crafting/ingot_aluminum_to_storage__aluminum'})
+
+//duplicate metal block transmutation
+//steel
+event.stonecutting('immersiveengineering:storage_steel', '#c:storage_blocks/steel')
+event.stonecutting('tfmg:steel_block', '#c:storage_blocks/steel')
+event.stonecutting('createbigcannons:steel_block', '#c:storage_blocks/steel')
+event.stonecutting('overgeared:steel_block', '#c:storage_blocks/steel')
+event.stonecutting('alloyed:steel_block', '#c:storage_blocks/steel')
+//cast iron
+event.stonecutting('tfmg:cast_iron_block', '#c:storage_blocks/cast_iron')
+event.stonecutting('createbigcannons:cast_iron_block', '#c:storage_blocks/cast_iron')
+//bronze
+event.stonecutting('createbigcannons:bronze_block', '#c:storage_blocks/bronze')
+event.stonecutting('alloyed:bronze_block', '#c:storage_blocks/bronze')
+//lead
+event.stonecutting('immersiveengineering:storage_lead', '#c:storage_blocks/lead')
+event.stonecutting('tfmg:lead_block', '#c:storage_blocks/lead')
+//nickel
+event.stonecutting('immersiveengineering:storage_nickel', '#c:storage_blocks/nickel')
+event.stonecutting('tfmg:nickel_block', '#c:storage_blocks/nickel')
+//aluminum
+event.stonecutting('immersiveengineering:storage_aluminum', '#c:storage_blocks/aluminum')
+event.stonecutting('tfmg:aluminum_block', '#c:storage_blocks/aluminum')
+
+
 
 
 //change casting basin recipe
@@ -163,12 +195,6 @@ event.shaped(
     B: 'immersiveengineering:hemp_fiber'
   }
 )
-
-
-
-// replace items
-
-
 
 
 // Make Molten Steel
@@ -804,9 +830,108 @@ event.recipes.create.mixing(Fluid.of('createbigcannons:molten_cast_iron', 288), 
 
 
 //funky fresh aluminum preprocessing
-event.recipes.create.crushing(['tfmg:bauxite_powder', CreateItem.of('tfmg:aluminum_nugget', 0.05)], 'immersiveengineering:raw_aluminum')
+event.recipes.create.crushing([CreateItem.of('4x tfmg:bauxite_powder', 0.9), CreateItem.of('tfmg:aluminum_nugget', 0.05)], 'immersiveengineering:raw_aluminum')
+
+//alternate aluminum processing
+event.remove({output: 'create:crushed_raw_aluminum'})
+event.recipes.create.sequenced_assembly(
+  // Outputs:
+  [
+    CreateItem.of('create:crushed_raw_aluminum')
+  ],
+  // Input:
+  'immersiveengineering:raw_aluminum', 
+  // Sequence:
+  [
+    // The transitional item set by `transitionalItem('create:incomplete_large_cogwheel')` is the item used during the intermediate stages of the assembly
+    // Like a normal recipe function, it's used as a sequence step in this array. Input and output have the transitional item
+    event.recipes.create.pressing('immersiveengineering:raw_aluminum', ['immersiveengineering:raw_aluminum']),
+    event.recipes.create.filling('immersiveengineering:raw_aluminum', ['immersiveengineering:raw_aluminum', Fluid.of('minecraft:water', 500)]),
+    event.recipes.create.pressing('immersiveengineering:raw_aluminum', ['immersiveengineering:raw_aluminum']),
+    event.recipes.create.filling('immersiveengineering:raw_aluminum', ['immersiveengineering:raw_aluminum', Fluid.of('minecraft:water', 500)]),
+    event.recipes.create.pressing('immersiveengineering:raw_aluminum', ['immersiveengineering:raw_aluminum']),
+    event.recipes.create.filling('immersiveengineering:raw_aluminum', ['immersiveengineering:raw_aluminum', Fluid.of('minecraft:water', 500)]),
+    event.recipes.create.pressing('immersiveengineering:raw_aluminum', 'immersiveengineering:raw_aluminum')
+  ]
+)
+.transitionalItem('immersiveengineering:raw_aluminum') // Set the transitional item
+.loops(1) // Set the number of loops
+//raw aluminum
+event.recipes.create.splashing(['4x tfmg:aluminum_nugget', CreateItem.of('2x tfmg:aluminum_nugget', 0.5)], 'create:crushed_raw_aluminum')
 
 
+
+
+//radiant age metals
+event.remove({output: 'createcasing:chorium_ingot'})
+//make vat recipe for chorium
+event.custom({
+  "type": "tfmg:vat_machine_recipe",
+  "allowed_vat_types": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "quark:chorus_fruit_block"
+    },
+    {
+      "item": "tfmg:aluminum_ingot"    
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "aeronautics:levitite_blend"
+    }
+  ],
+  "machines": [
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode"
+  ],
+  "min_size": 9,
+  "processing_time": 200,
+  "results": [
+    {
+      "chance": 0.9,
+      "id": "createcasing:chorium_ingot"
+    },
+    {
+      "amount": 288,
+      "id": "tfmg:molten_slag"
+    },
+    {
+      "amount": 1000,
+      "id": "tfmg:furnace_gas"
+    }
+  ]
+})
+
+//rework chromatic recipe
+event.remove({output: 'create:chromatic_compound'})
+event.recipes.create.sequenced_assembly(
+  // Outputs:
+  [
+    CreateItem.of('create:chromatic_compound'), // Main output, will appear in JEI as the result
+  ],
+  // Input:
+  'createcasing:chorium_ingot', 
+  // Sequence:
+  [
+    // The transitional item set by `transitionalItem('create:incomplete_large_cogwheel')` is the item used during the intermediate stages of the assembly
+    // Like a normal recipe function, it's used as a sequence step in this array. Input and output have the transitional item
+    event.recipes.create.deploying('create:chromatic_compound', ['create:chromatic_compound', 'minecraft:lapis_lazuli',]),
+    event.recipes.create.pressing('create:chromatic_compound', 'create:chromatic_compound'),
+    event.recipes.create.filling('create:chromatic_compound', ['create:chromatic_compound', Fluid.of('createpropulsion:coral', 250)]),
+    event.recipes.create.pressing('create:chromatic_compound', 'create:chromatic_compound'),
+    event.recipes.create.deploying('create:chromatic_compound', ['create:chromatic_compound', 'create:experience_nugget',])
+  ]
+)
+.transitionalItem('create:chromatic_compound') // Set the transitional item
+.loops(2) // Set the number of loops
+
+//renewable endstone cuz why not
+event.recipes.create.mixing('4x minecraft:end_stone', [Fluid.of('aeronautics:levitite_blend', 100), '4x minecraft:cobblestone'])
 
 
 
@@ -814,3 +939,14 @@ event.recipes.create.crushing(['tfmg:bauxite_powder', CreateItem.of('tfmg:alumin
 
 
 })
+
+
+
+
+
+
+
+
+
+
+
