@@ -29,11 +29,32 @@ event.remove({ id: 'createbigcannons:iron_to_cast_iron_block'})
 event.remove({ id: 'createbigcannons:cast_iron_block'})
 event.remove({ id: 'createdieselgenerators:mixing/biodiesel'})
 
+//add chorus flower recipe
+event.recipes.create.filling('minecraft:chorus_flower', [Fluid.of('minecraft:water'), 'quark:chorus_fruit_block'])
+event.remove({ output: 'quark:chorus_fruit_block'})
+event.shaped(
+  Item.of('quark:chorus_fruit_block', 1), // arg 1: output
+  [
+    '   ',
+    'AA ', // arg 2: the shape (array of strings)
+    'AA '
+  ],
+  {
+    A: 'minecraft:chorus_fruit'
+  }
+) 
+event.remove({ id: 'quark:building/crafting/compressed/chorus_fruit_blockuncompress'})
+event.shapeless(
+  Item.of('minecraft:chorus_fruit', 4), // arg 1: output
+  [
+    'quark:chorus_fruit_block'
+  ]
+)
 
-
-
-
+//add copper to gravel washing
 event.recipes.create.splashing([CreateItem.of('minecraft:flint', 0.25), CreateItem.of('create:copper_nugget', 0.12), CreateItem.of('minecraft:iron_nugget', 0.12)], 'minecraft:gravel')
+//slag conversion
+event.recipes.create.splashing([CreateItem.of('immersiveengineering:slag')], 'tfmg:slag')
 
 //crowns steelification
 event.remove({ output: 'crowns:heat_exchanger'})
