@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "how_did_we_get_here"
+	group: ""
+	id: "6ED49D875F540306"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

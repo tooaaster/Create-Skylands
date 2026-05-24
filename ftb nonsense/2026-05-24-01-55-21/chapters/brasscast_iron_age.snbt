@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "brasscast_iron_age"
+	group: "72B7C5AA4B1ACB2D"
+	icon: {
+		id: "create:brass_ingot"
+	}
+	id: "2C325A2FDD6715CF"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+}

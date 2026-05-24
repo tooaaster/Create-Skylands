@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "guide_to_overgeared"
+	group: "2B45F361E31F1DD0"
+	icon: {
+		id: "overgeared:smithing_anvil"
+	}
+	id: "26E8247E87224FFA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

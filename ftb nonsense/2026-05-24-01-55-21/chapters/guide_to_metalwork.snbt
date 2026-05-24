@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "guide_to_metalwork"
+	group: "2B45F361E31F1DD0"
+	icon: {
+		id: "tfmg:casting_basin"
+	}
+	id: "3460462445844FA3"
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		id: "6EF80DFAB43A72BC"
+		tasks: [{
+			id: "0177202AEFE8D592"
+			item: { count: 1, id: "tfmg:casting_basin" }
+			type: "item"
+		}]
+		x: 2.0d
+		y: -0.5d
+	}]
+}

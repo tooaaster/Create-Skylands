@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "andesite_age"
+	group: "72B7C5AA4B1ACB2D"
+	icon: {
+		id: "create:andesite_alloy"
+	}
+	id: "235898C91B5B04EA"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}
