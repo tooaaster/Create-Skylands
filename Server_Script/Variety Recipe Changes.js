@@ -29,6 +29,29 @@ event.remove({ id: 'createbigcannons:iron_to_cast_iron_block'})
 event.remove({ id: 'createbigcannons:cast_iron_block'})
 event.remove({ id: 'createdieselgenerators:mixing/biodiesel'})
 
+
+
+//lock steam engines behind mech crafters
+event.remove({ output: 'create:steam_engine'})
+event.recipes.create.mechanical_crafting('create:steam_engine', [
+  'A',
+  'B',
+  'C',
+  'B',
+  'D'
+], {
+  A: 'create:brass_sheet',
+  B: 'create:andesite_alloy',
+  C: 'create:brass_ingot',
+  D: 'minecraft:copper_block'
+})
+
+
+
+
+
+
+
 //add chorus flower recipe
 event.recipes.create.filling('minecraft:chorus_flower', [Fluid.of('minecraft:water'), 'quark:chorus_fruit_block'])
 event.remove({ output: 'quark:chorus_fruit_block'})
@@ -56,21 +79,6 @@ event.recipes.create.splashing([CreateItem.of('minecraft:flint', 0.25), CreateIt
 //slag conversion
 event.recipes.create.splashing([CreateItem.of('immersiveengineering:slag')], 'tfmg:slag')
 
-//crowns steelification
-event.remove({ output: 'crowns:heat_exchanger'})
-event.shaped(
-  Item.of('tfmg:coke_oven', 3), // arg 1: output
-  [
-    'BAB',
-    'ACA', // arg 2: the shape (array of strings)
-    'BAB'
-  ],
-  {
-    A: 'tfmg:cast_iron_ingot',
-    B: 'create:brass_ingot',  //arg 3: the mapping object
-    C: 'tfmg:cast_iron_fluid_tank'
-  }
-) 
 
 //drills
 event.recipes.create.mechanical_crafting('createoreexcavation:drilling_machine', [
