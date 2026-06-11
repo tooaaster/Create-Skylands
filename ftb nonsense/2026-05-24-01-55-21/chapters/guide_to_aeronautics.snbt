@@ -9,5 +9,13 @@
 	id: "58D6BBF22EF61097"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "65EDFA6368867BDE"
+		tasks: [{
+			id: "75B4D39681FC4E40"
+			type: "checkmark"
+		}]
+		x: -1.0d
+		y: 2.0d
+	}]
 }

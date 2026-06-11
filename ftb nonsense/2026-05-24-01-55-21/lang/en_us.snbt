@@ -3,9 +3,9 @@
 	chapter.11AAB7C0508893FA.title: "Guide to: Ender Gateways"
 	chapter.170F20962B723A67.title: "Steel Age"
 	chapter.1D56AD30272B3495.title: "Guide to: Ore Excavation"
-	chapter.235898C91B5B04EA.title: "Andesite/Iron Age"
+	chapter.235898C91B5B04EA.title: "Andesite Age"
 	chapter.26E8247E87224FFA.title: "Guide to: Overgeared"
-	chapter.2C325A2FDD6715CF.title: "Brass/Cast Iron Age"
+	chapter.2C325A2FDD6715CF.title: "Brass Age"
 	chapter.3460462445844FA3.title: "Guide to: Metalwork"
 	chapter.518334715B7252C2.title: "Nuclear Age"
 	chapter.58D6BBF22EF61097.title: "Guide to: Aeronautics"
@@ -15,6 +15,7 @@
 	chapter.79C50904F7AD679B.title: "Radiance Age"
 	chapter_group.2B45F361E31F1DD0.title: "Guides"
 	chapter_group.72B7C5AA4B1ACB2D.title: "Progession"
+	quest.0BC631DFEB07BEC3.quest_subtitle: "A 4 block tall blast furnace should be good enough to start off"
 	quest.0D618092CDBD9986.quest_desc: [
 		"Windmills generate SU based on the number of sails or wool blocks attached to the windmill bearing. For every 8 sails it produces 512 SU, up to a maximum of 8,192 SU with 128 sails. "
 		""
@@ -62,10 +63,24 @@
 		""
 		"Note that the small waterwheel spins twice as fast(8 rpm) as the large waterwheel(4 rpm), which can be usefull early game to speed up your machines a bit more."
 	]
-	quest.30AA015085797F0B.quest_desc: ["Works like a crafting table, but slower and worse, but has special crafting recipes exclusive to it. It is modular and only needs as many crafters as items the recipe requires (you need to make sure all crafters are connected, this will use more crafters to acheive this if it is needed). All crafters also need to point in a collective direction, meeting at a singular output. The ponder demonstrates this better if this doesnt make sense."]
-	quest.30AA015085797F0B.quest_subtitle: "You'd think being mechaincal would make it better"
+	quest.30AA015085797F0B.quest_desc: [
+		"Works like a crafting table, but slower and worse, but has special crafting recipes exclusive to it. It is modular and only needs as many crafters as items the recipe requires (you need to make sure all crafters are connected, this will use more crafters to acheive this if it is needed). All crafters also need to point in a collective direction, meeting at a singular output."
+		""
+		"(The ponder demonstrates this better if this doesnt make sense)"
+	]
+	quest.30AA015085797F0B.quest_subtitle: "You'd think being mechanical would make it better"
+	quest.32C7FC63AF3447EE.quest_desc: [
+		"Many blocks in create can be encased, such as cogs, shafts, pipes, and belts. Due to the addon mod: Create Encased, you can encase nearly any create block with any create casing. Encasing blocks is usually cosmetic and does not consume the casing, but there are some situations where it is quite useful."
+		""
+		"Encasing cogs is very useful for making compact builds as it hides the shaft of the cog if it is not connected to anything, allowing for cogs to stack on top of eachother."
+		""
+		"Encasing pipes can be used to lock the configuration of a pipe. This stops any other pipes from making unwanted connections."
+	]
+	quest.32C7FC63AF3447EE.title: "Encasing"
+	quest.34E070299A1E13FA.quest_subtitle: "A little bonus, it's on the house"
 	quest.397CD9408D8659B6.quest_desc: ["Presses items and/or fluids using a press over a a basin."]
 	quest.397CD9408D8659B6.quest_subtitle: "Bonking so good they made another one"
+	quest.399B067B48D4677C.title: "Catalysts"
 	quest.3B045CB00003B647.quest_desc: ["Presses items on the ground beneath it or on a depot beneath it. Pretty self-explainitory"]
 	quest.3B045CB00003B647.quest_subtitle: "BONK!"
 	quest.40434A8C50067417.quest_desc: [
@@ -75,10 +90,12 @@
 	quest.40434A8C50067417.quest_subtitle: "The Answer to Life, The Universe, And Everything"
 	quest.40434A8C50067417.title: "Cobblestone Generation"
 	quest.412E7BB5A416D47C.quest_desc: ["Generation: Blocks that generate SU are windmills, waterwheels, steam engines, and the fueled engines from TFMG(they are in a league of their own and won't be discussed in this quest tab. "]
+	quest.4167BB254B9866CA.quest_subtitle: "Note: Needs Brass"
 	quest.44C3FA5A18CD29E0.quest_desc: ["Deploys and item onto another item on a depot/belt beneath it. This consumes the item in the deployers hand. Can also place blocks and attack mobs."]
 	quest.44C3FA5A18CD29E0.quest_subtitle: "Does all the handy work you don't want to"
 	quest.4677AC77B24C5064.quest_desc: ["The resulting molten brass needs pumped into a casting basin and is then cooled into heated ingots. Those heated ingot can be dropped into water to be instantly cooled into normal brass ingots. Also, in order to get molten zinc/copper, you need to melt the repective ingot in a heated foundry basin."]
 	quest.4677AC77B24C5064.title: "Casting the Brass"
+	quest.485DBAF8764766A9.title: "Mixing"
 	quest.5342D12C89C5BD16.quest_desc: ["A little crusher. Can be powered from a cog interlocking with the mill, or from a shaft from below."]
 	quest.5342D12C89C5BD16.quest_subtitle: "Crushing"
 	quest.5E4DFEB1BEAB390B.quest_desc: [
@@ -90,6 +107,8 @@
 	quest.62502713ED5D4AA9.quest_desc: ["Mixing 1 nugget and 1 andesite in a basin makes 1 andesite alloy"]
 	quest.63D33F15C859FBE1.quest_desc: ["Polishes items when you put the sandpaper in your offhand and hold right-click the item you want to polish. Can also be put in a deployer to quickly polish items"]
 	quest.63D33F15C859FBE1.quest_subtitle: "idk what joke to make here"
+	quest.65EDFA6368867BDE.quest_desc: ["Aeronautics is a mod that adds physics simulation to Minecraft. "]
+	quest.65EDFA6368867BDE.title: "Aeronautics Basics"
 	quest.697791ED7A5B4F74.quest_desc: ["Iron is made from washing gravel"]
 	quest.6C9F6ED13A99B014.quest_desc: ["Zinc is generated from ore excavation drills or by mining its ore."]
 	quest.6EF80DFAB43A72BC.quest_desc: ["awsdasda"]
@@ -99,6 +118,9 @@
 		""
 		"Steam Engines can be made in various sizes or \"levels\" and are constructed from three main parts: the boiler, which is built out of fluid tanks, the steam engines, which determines how much SU is extracted, and the blaze burners, which generate heat for the boiler. "
 		""
+		"Cont. on next page..."
+		""
+		"{@pagebreak}"
 		"The boilers level is determined by the lowest of three factors: heat, size, and water. For example if you have a large boiler and plenty of heat, but not enough water, then the steam engine will not produce the maximum amount of SU as it could. Experimenting with these three factors is the best way to get a feel for the \"level\" system. "
 		""
 		"The level number determines how many steam engines you need, with level 1 needing one and level 18 needing 18. Steam engines at maximum power generate 16,384 SU."
@@ -125,9 +147,11 @@
 	task.018C58444C4687FA.title: "Steam Engines"
 	task.0398999EB9789B7F.title: "Compacting"
 	task.047948640D094EA0.title: "Windmills"
+	task.059B91FBAE85ADEA.title: "Noodle do this"
 	task.0A47A99AC81C4E94.title: "Blowing"
 	task.0AA67EC02BA03C26.title: "Iron Generation"
 	task.10723D947DE707AF.title: "Andesite Alloy"
+	task.153F01633A50307C.title: "Casing"
 	task.1617EA39D75C1D7D.title: "Brass"
 	task.1C70B5A0EF604180.title: "Copper Generation"
 	task.1E4C3E9721CBC2BD.title: "SU Generation"
@@ -151,6 +175,7 @@
 	task.6C70683331C6508A.title: "Blowing"
 	task.6D1872A5565C94BB.title: "Alloying"
 	task.712DE5D82135B248.title: "Mixing"
+	task.75B4D39681FC4E40.title: "Getting Started With Aeronautics"
 	task.78D696AD80EEB108.title: "Mixing"
 	task.7AB5F16088770BBD.title: "SequentiaCrafting"
 }

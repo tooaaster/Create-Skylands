@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "how_did_we_get_here"
 	group: ""
+	icon: {
+		id: "minecraft:milk_bucket"
+	}
 	id: "6ED49D875F540306"
 	order_index: 0
 	quest_links: [ ]

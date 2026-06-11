@@ -23,8 +23,8 @@
 				id: "10723D947DE707AF"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -6.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["40434A8C50067417"]
@@ -36,8 +36,8 @@
 				id: "0AA67EC02BA03C26"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -7.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["40434A8C50067417"]
@@ -49,8 +49,8 @@
 				id: "3E8AA23E4B7597FF"
 				type: "checkmark"
 			}]
-			x: 4.5d
-			y: -7.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["156E9B994039106B"]
@@ -62,8 +62,8 @@
 				id: "22A3B103A89B7464"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -4.5d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["156E9B994039106B"]
@@ -75,8 +75,8 @@
 				id: "78D696AD80EEB108"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -4.5d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["156E9B994039106B"]
@@ -88,8 +88,8 @@
 				id: "6D1872A5565C94BB"
 				type: "checkmark"
 			}]
-			x: 4.5d
-			y: -4.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -100,8 +100,8 @@
 				id: "67CC535366F15B27"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -112,8 +112,8 @@
 				id: "1C70B5A0EF604180"
 				type: "checkmark"
 			}]
-			x: 4.5d
-			y: -3.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -128,8 +128,8 @@
 				id: "1617EA39D75C1D7D"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2ACD6C7D9C589C34"]
@@ -141,8 +141,8 @@
 				id: "37FEE84020AAEA4F"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -153,8 +153,8 @@
 				id: "3650A664994FF70D"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -9.0d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -166,8 +166,8 @@
 				id: "712DE5D82135B248"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: -7.5d
+			x: 10.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -179,8 +179,8 @@
 				id: "41E9F73EA58FFB4B"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: -7.5d
+			x: 8.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -191,8 +191,8 @@
 				id: "1E93DAE5474BAE87"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: 0.0d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -204,8 +204,8 @@
 				id: "0398999EB9789B7F"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: -6.0d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			id: "2C2312D2343F54B7"
@@ -213,8 +213,8 @@
 				id: "26767E21138F2AB8"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -14.0d
+			x: 4.5d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -225,8 +225,8 @@
 				id: "0044F716936B4E12"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: 1.5d
+			x: 8.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -246,8 +246,8 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
-			y: -3.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -259,8 +259,8 @@
 				id: "5F5B1726D3627259"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: -3.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -272,8 +272,8 @@
 				id: "69A38833655CA5FC"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: -1.5d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -285,8 +285,8 @@
 				id: "4CC40584823BE933"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: -4.5d
+			x: 10.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -304,8 +304,8 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: 0.0d
+			x: 10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -317,8 +317,8 @@
 				id: "7AB5F16088770BBD"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: -1.5d
+			x: 10.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -329,8 +329,8 @@
 				id: "44176E3A0FCADE6B"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 10.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -342,8 +342,8 @@
 				id: "4D13FFFBCB583C72"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: -4.5d
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["412E7BB5A416D47C"]
@@ -355,8 +355,8 @@
 				id: "60FA69BAA804159E"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -11.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["412E7BB5A416D47C"]
@@ -368,8 +368,8 @@
 				id: "047948640D094EA0"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -11.0d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["412E7BB5A416D47C"]
@@ -381,8 +381,8 @@
 				id: "018C58444C4687FA"
 				type: "checkmark"
 			}]
-			x: 4.5d
-			y: -11.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2C2312D2343F54B7"]
@@ -391,8 +391,8 @@
 				id: "1E4C3E9721CBC2BD"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -12.5d
+			x: 4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2C2312D2343F54B7"]
@@ -401,8 +401,8 @@
 				id: "4AC8427C80750CE0"
 				type: "checkmark"
 			}]
-			x: 9.5d
-			y: -9.0d
+			x: 9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1717BFE0BA53BF0A"]
@@ -414,8 +414,21 @@
 				id: "6C70683331C6508A"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: -6.0d
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2C2312D2343F54B7"]
+			icon: {
+				id: "create:andesite_casing"
+			}
+			id: "32C7FC63AF3447EE"
+			tasks: [{
+				id: "153F01633A50307C"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -4.5d
 		}
 	]
 }
