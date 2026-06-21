@@ -105,7 +105,8 @@ event.recipes.createoreexcavation.drilling('crowns:raw_uranium', 'kubejs:uruwu_v
 event.recipes.createoreexcavation.drilling(
 	[
 		Item.of('crowns:raw_uranium'),
-		coeutil.processingOutput('tfmg:slag', 0.2)
+		coeutil.processingOutput('tfmg:slag', 0.1),
+        coeutil.processingOutput('minecraft:gravel', 0.5)
 	], 'kubejs:uruwu_vein', 1000)
 	.drill('createoreexcavation:netherite_drill').fluid('0.05Bx tfmg:sulfuric_acid').stress(256).id("kubejs:uruwu_vein");
 

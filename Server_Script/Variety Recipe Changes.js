@@ -29,29 +29,6 @@ event.remove({ id: 'createbigcannons:iron_to_cast_iron_block'})
 event.remove({ id: 'createbigcannons:cast_iron_block'})
 event.remove({ id: 'createdieselgenerators:mixing/biodiesel'})
 
-
-
-//lock steam engines behind mech crafters
-event.remove({ output: 'create:steam_engine'})
-event.recipes.create.mechanical_crafting('create:steam_engine', [
-  'A',
-  'B',
-  'C',
-  'B',
-  'D'
-], {
-  A: 'create:brass_sheet',
-  B: 'create:andesite_alloy',
-  C: 'create:brass_ingot',
-  D: 'minecraft:copper_block'
-})
-
-
-
-
-
-
-
 //add chorus flower recipe
 event.recipes.create.filling('minecraft:chorus_flower', [Fluid.of('minecraft:water'), 'quark:chorus_fruit_block'])
 event.remove({ output: 'quark:chorus_fruit_block'})
@@ -74,11 +51,61 @@ event.shapeless(
   ]
 )
 
+//add secondary iron rod recipe
+event.recipes.create.sequenced_assembly(
+  // Outputs:
+  [
+    CreateItem.of('immersiveengineering:stick_iron', 1) // Main output, will appear in JEI as the result
+  ],
+  // Input:
+  'create:iron_sheet', 
+  [
+    event.recipes.create.pressing('create:iron_sheet', 'create:iron_sheet'),
+    event.recipes.create.cutting('create:iron_sheet', 'create:iron_sheet')
+  ]
+).transitionalItem('create:iron_sheet') // Set the transitional item
+.loops(1)
+
 //add copper to gravel washing
 event.recipes.create.splashing([CreateItem.of('minecraft:flint', 0.25), CreateItem.of('create:copper_nugget', 0.12), CreateItem.of('minecraft:iron_nugget', 0.12)], 'minecraft:gravel')
 //slag conversion
 event.recipes.create.splashing([CreateItem.of('immersiveengineering:slag')], 'tfmg:slag')
-
+//slag to nickel and lead
+event.recipes.create.mixing([CreateItem.of('tfmg:nickel_nugget', 0.5), CreateItem.of('tfmg:lead_nugget', 0.8)], ['3x tfmg:slag', '8x tfmg:limesand']).superheated()
+//sulfur from gunpowder
+event.custom({
+  "type": "tfmg:vat_machine_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "machines": [
+    "tfmg:centrifuge"
+  ],
+  "min_size": 4,
+  "processing_time": 200,
+  "results": [
+    {
+      "chance": 0.8,
+      "id": "tfmg:sulfur_dust"
+    },
+    {
+      "chance": 0.3,
+      "id": "tfmg:nitrate_dust"
+    },
+    {
+      "amount": 500,
+      "id": "tfmg:carbon_dioxide"
+    }
+  ]
+})
 
 //drills
 event.recipes.create.mechanical_crafting('createoreexcavation:drilling_machine', [
@@ -104,16 +131,6 @@ event.recipes.create.mechanical_crafting('createoreexcavation:extractor', [
   G: 'create:mechanical_drill',
   H: 'create:metal_girder'
 })
-//steel mechanism
-event.recipes.create.sequenced_assembly(
-      'tfmg:steel_mechanism', 'create:precision_mechanism',
-      [
-        event.recipes.create.deploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:steel_cogwheel',]),
-        event.recipes.create.deploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:large_steel_cogwheel',]),
-        event.recipes.create.deploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'immersiveengineering:component_steel',])
-      ])
-    .transitionalItem('tfmg:unfinished_steel_mechanism')
-    .loops(3)
 
 
 //coke oven locked behind both cast iron and brass

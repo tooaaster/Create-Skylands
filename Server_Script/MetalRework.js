@@ -105,79 +105,7 @@ event.replaceInput(
 
 )
 
-event.shaped(
-  Item.of('alloyed:steel_sword'), // arg 1: output
-  [
-    ' A ',
-    ' A ', // arg 2: the shape (array of strings)
-    ' B '
-  ],
-  {
-    A: 'tfmg:steel_ingot',
-    B: 'immersiveengineering:stick_treated'
-  }
-)
 
-event.shaped(
-  Item.of('alloyed:steel_pickaxe'), // arg 1: output
-  [
-    'AAA',
-    ' B ', // arg 2: the shape (array of strings)
-    ' B '
-  ],
-  {
-    A: 'tfmg:steel_ingot',
-    B: 'immersiveengineering:stick_treated'
-  }
-)
-
-event.shaped(
-  Item.of('alloyed:steel_axe'), // arg 1: output
-  [
-    'AA ',
-    'AB ', // arg 2: the shape (array of strings)
-    ' B '
-  ],
-  {
-    A: 'tfmg:steel_ingot',
-    B: 'immersiveengineering:stick_treated'
-  }
-)
-event.shaped(
-  Item.of('alloyed:steel_shovel'), // arg 1: output
-  [
-    ' A ',
-    ' B ', // arg 2: the shape (array of strings)
-    ' B '
-  ],
-  {
-    A: 'tfmg:steel_ingot',
-    B: 'immersiveengineering:stick_treated'
-  }
-)
-event.shaped(
-  Item.of('alloyed:steel_hoe'), // arg 1: output
-  [
-    'AA ',
-    ' B ', // arg 2: the shape (array of strings)
-    ' B '
-  ],
-  {
-    A: 'tfmg:steel_ingot',
-    B: 'immersiveengineering:stick_treated'
-  }
-)
-event.shaped(
-  Item.of('alloyed:steel_shears'), // arg 1: output
-  [
-    ' A ',
-    'A  ', // arg 2: the shape (array of strings)
-    '   '
-  ],
-  {
-    A: 'tfmg:steel_ingot'
-  }
-)
 
 event.shaped(
   Item.of('alloyed:steel_fishing_rod'), // arg 1: output
@@ -194,6 +122,9 @@ event.shaped(
 
 
 // Make Molten Steel
+event.remove({id: 'tfmg:industrial_blastin/steel'})
+event.remove({id: 'tfmg:industrial_blastin/steel_from_raw_iron'})
+event.remove({id: 'tfmg:industrial_blastin/steel_from_dust'})
 event.custom({
   "type": "tfmg:industrial_blasting",
   "hot_air_usage": 20,
@@ -334,13 +265,45 @@ event.custom({
   "processing_time": 100,
   "results": [
     {
-      "id": "tfmg:steel_ingot"
+      "id": "kubejs:heated_steel_ingot"
     }
   ]
 })
 
 
 //iron melting & casting
+event.custom({
+  "type": "createbigcannons:melting",
+  "heat_requirement": "lowheated",
+  "ingredients": [
+  {
+    "tag": "c:ingots/iron"
+  }
+],
+"processing_time": 120,
+"results": [
+  {
+    "amount": 144,
+    "id": "createmetalwork:molten_iron"
+  }
+]
+})
+event.custom({
+  "type": "createbigcannons:melting",
+  "heat_requirement": "lowheated",
+  "ingredients": [
+  {
+    "tag": "c:storage_blocks/iron"
+  }
+],
+"processing_time": 840,
+"results": [
+  {
+    "amount": 1296,
+    "id": "createmetalwork:molten_iron"
+  }
+]
+})
 event.custom({
   "type": "createbigcannons:melting",
   "heat_requirement": "heated",
@@ -385,7 +348,7 @@ event.custom({
   "processing_time": 100,
   "results": [
     {
-      "id": "minecraft:iron_ingot"
+      "id": "overgeared:heated_iron_ingot"
     }
   ]
 })
@@ -516,7 +479,7 @@ event.custom({
   "processing_time": 100,
   "results": [
     {
-      "id": "minecraft:copper_ingot"
+      "id": "overgeared:heated_copper_ingot"
     }
   ]
 })
@@ -768,7 +731,7 @@ event.custom({
 //cast iron melting & casting
 event.custom({
   "type": "createbigcannons:melting",
-  "heat_requirement": "heated",
+  "heat_requirement": "lowheated",
   "ingredients": [
   {
     "tag": "c:ingots/cast_iron"
@@ -784,7 +747,7 @@ event.custom({
 })
 event.custom({
   "type": "createbigcannons:melting",
-  "heat_requirement": "heated",
+  "heat_requirement": "lowheated",
   "ingredients": [
   {
     "tag": "c:storage_blocks/cast_iron"
