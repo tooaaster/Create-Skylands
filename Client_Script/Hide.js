@@ -18,5 +18,4 @@ event.hide(Item.of('immersiveengineering:creosote_bucket'))
 event.hide(Item.of('createbigcannons:bronze_ingot'))
 
 
-
 })
