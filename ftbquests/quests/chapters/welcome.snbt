@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: {
+		id: "minecraft:diamond"
+	}
+	id: "78F4DCDA94C4ECC0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

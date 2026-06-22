@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "guide_to_the_factory_must_grow"
+	group: "2B45F361E31F1DD0"
+	icon: {
+		id: "tfmg:steel_cogwheel"
+	}
+	id: "021114C87D47E639"
+	order_index: 3
+	quest_links: [ ]
+	quests: [ ]
+}

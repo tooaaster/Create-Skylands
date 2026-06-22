@@ -1,0 +1,569 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nuclear_age"
+	group: "72B7C5AA4B1ACB2D"
+	icon: {
+		id: "tfmg:aluminum_ingot"
+	}
+	id: "518334715B7252C2"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["21885DEF94D48FE0"]
+			id: "1D42E61CAAA7B6AE"
+			tasks: [{
+				id: "711E3E1D89D2A5AF"
+				item: { count: 1, id: "tfmg:aluminum_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1D42E61CAAA7B6AE"
+				"74FC6DA4261D3418"
+				"7A62103F337AC114"
+				"34A9D2661FC7856F"
+			]
+			id: "4AE9A6EB28BA9A66"
+			tasks: [{
+				id: "687360C2954C491D"
+				item: { count: 1, id: "createcasing:chorium_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4AE9A6EB28BA9A66"
+				"4404DD0DAC259DAC"
+			]
+			id: "253A2F2AEFD5A8E8"
+			tasks: [{
+				id: "373CE6EDFD609340"
+				item: { count: 1, id: "create:chromatic_compound" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"253A2F2AEFD5A8E8"
+				"7AD89C12673EFE45"
+			]
+			id: "3803A834D446203E"
+			tasks: [{
+				id: "4F69A8DF4345D481"
+				item: { count: 1, id: "create:refined_radiance" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"253A2F2AEFD5A8E8"
+				"760FE73005BA64C1"
+			]
+			id: "0864B38723BE9113"
+			tasks: [{
+				id: "24B5A62991CC5D43"
+				item: { count: 1, id: "create:shadow_steel" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"75DF01889B7F4D9F"
+				"7E1763A830BB0553"
+			]
+			id: "4404DD0DAC259DAC"
+			tasks: [{
+				id: "04180DFA1524B35B"
+				item: { count: 1, id: "createpropulsion:coral_bucket" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["584088F5FD9BCD97"]
+			id: "74FC6DA4261D3418"
+			tasks: [{
+				id: "743D458443EC3D60"
+				item: { count: 1, id: "aeronautics:levitite_blend_bucket" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			id: "79F79E265C79485A"
+			tasks: [{
+				id: "676513FC6D4F1C41"
+				item: { count: 1, id: "minecraft:end_stone" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["79F79E265C79485A"]
+			id: "584088F5FD9BCD97"
+			tasks: [{
+				id: "4A5290D4D2DC66C7"
+				item: { count: 1, id: "aeronautics:end_stone_powder" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5CEEBEDCDFA33D01"]
+			id: "7A62103F337AC114"
+			tasks: [{
+				id: "209E784FB726D923"
+				item: { count: 1, id: "quark:chorus_fruit_block" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			id: "75DF01889B7F4D9F"
+			tasks: [{
+				id: "2DE2AEB130F7D4D3"
+				item: { components: { "minecraft:potion_contents": { potion: "minecraft:healing" } }, count: 1, id: "minecraft:potion" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "7E1763A830BB0553"
+			tasks: [{
+				id: "64CB374787F05A6B"
+				item: { count: 1, id: "minecraft:blaze_powder" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "5CEEBEDCDFA33D01"
+			tasks: [{
+				id: "04566DFD2DEED1F1"
+				item: { count: 1, id: "minecraft:chorus_fruit" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1D42E61CAAA7B6AE"]
+			id: "55E06DC488BBE2B3"
+			tasks: [{
+				id: "6401C529D64573C1"
+				item: { count: 1, id: "tfmg:aluminum_sheet" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["55E06DC488BBE2B3"]
+			id: "2C2C05844ADA51D6"
+			tasks: [{
+				id: "41BB5667C0EB8253"
+				item: { count: 1, id: "crowns:heat_exchanger" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["55E06DC488BBE2B3"]
+			id: "03A2DB08D318B4FA"
+			tasks: [{
+				id: "1D69332BE73DF1C3"
+				item: { count: 1, id: "crowns:turbine_stage" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["55E06DC488BBE2B3"]
+			id: "00AE28FA1899FCAF"
+			tasks: [{
+				id: "011BFF92DF969D0E"
+				item: { count: 1, id: "crowns:steam_collector" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["55E06DC488BBE2B3"]
+			id: "2666F8D4845D7020"
+			tasks: [{
+				id: "6145B29CEE492D5F"
+				item: { count: 1, id: "crowns:steam_input" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["05B976EA7C244AFC"]
+			dependency_requirement: "one_completed"
+			id: "79329D347392EAEA"
+			tasks: [
+				{
+					id: "587FC8F7C7584D3F"
+					item: { components: { "minecraft:custom_data": { composition: { "crowns:u235": 0.0078125d, "crowns:u238": 0.9921875d } } }, count: 1, id: "crowns:fuel_rod" }
+					type: "item"
+				}
+				{
+					id: "5320623827EA552E"
+					item: { components: { "minecraft:custom_data": { composition: { "crowns:u235": 0.1875d, "crowns:u238": 0.8125d } } }, count: 1, id: "crowns:fuel_rod" }
+					type: "item"
+				}
+				{
+					id: "4DBCA874C5CF855A"
+					item: { components: { "minecraft:custom_data": { composition: { "crowns:u235": 0.875d, "crowns:u238": 0.125d } } }, count: 1, id: "crowns:fuel_rod" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"79329D347392EAEA"
+				"2C2C05844ADA51D6"
+			]
+			id: "551BB0BFC792880B"
+			tasks: [
+				{
+					id: "4E86CD505E25539D"
+					item: { components: { "minecraft:custom_data": { composition: { "crowns:u235": 0.001953125d, "crowns:u238": 0.248046875d } } }, count: 1, id: "crowns:fuel_assembly" }
+					type: "item"
+				}
+				{
+					id: "14C1B29A02B512B4"
+					item: { components: { "minecraft:custom_data": { composition: { "crowns:u235": 0.046875d, "crowns:u238": 0.203125d } } }, count: 1, id: "crowns:fuel_assembly" }
+					type: "item"
+				}
+				{
+					id: "498F79CF4CB6EDF5"
+					item: { components: { "minecraft:custom_data": { composition: { "crowns:u235": 0.21875d, "crowns:u238": 0.03125d } } }, count: 1, id: "crowns:fuel_assembly" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["62B3F7095D30F18D"]
+			id: "05B976EA7C244AFC"
+			tasks: [{
+				id: "692C8BED32CAC841"
+				item: { count: 1, id: "crowns:uranium_hexafluoride_bucket" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2083E650BB40C93D"]
+			id: "62B3F7095D30F18D"
+			tasks: [{
+				id: "6E42EBF00FAEEF73"
+				item: { count: 1, id: "crowns:uranium_ingot" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			id: "1A27C0756C2FC1A0"
+			tasks: [{
+				id: "3F219D630D620EC0"
+				item: { count: 1, id: "tfmg:sulfuric_acid_bucket" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1A27C0756C2FC1A0"]
+			id: "2083E650BB40C93D"
+			tasks: [{
+				id: "3BBDC4A11032E36B"
+				item: { count: 1, id: "crowns:raw_uranium" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["74FC6DA4261D3418"]
+			id: "434363C58B6C8A1B"
+			tasks: [{
+				id: "5B07F45B6D7BB537"
+				item: { count: 1, id: "minecraft:end_stone" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"42D8C291CFD5984F"
+				"7C50B04E607A9D72"
+			]
+			id: "34A9D2661FC7856F"
+			tasks: [{
+				id: "34625BEC52CFF3DA"
+				item: { count: 1, id: "tfmg:fireproof_chemical_vat" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4FC6B34E81B2A022"
+				"73761D354244427B"
+				"1AAF1050ACFD84FA"
+			]
+			id: "7C50B04E607A9D72"
+			tasks: [{
+				id: "0D972914FBBDC78C"
+				item: { count: 1, id: "tfmg:circuit_board" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4CA11B5EC907F17D"]
+			id: "42D8C291CFD5984F"
+			tasks: [{
+				id: "5A4C6A4EE6E27D2D"
+				item: { count: 1, id: "tfmg:rubber_sheet" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["697D3C47C0C7CD3A"]
+			id: "4CA11B5EC907F17D"
+			tasks: [
+				{
+					id: "221D1DA26E7249D9"
+					item: { count: 1, id: "tfmg:steel_distillation_controller" }
+					type: "item"
+				}
+				{
+					id: "11C12FD9EA179D05"
+					item: { count: 1, id: "tfmg:steel_distillation_output" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			id: "697D3C47C0C7CD3A"
+			tasks: [{
+				id: "6E636D15F26E1883"
+				item: { count: 1, id: "tfmg:crude_oil_bucket" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4E44A2C9E39111DE"
+				"59F2DE701D6BDB3A"
+				"4EF712572A9A1C30"
+			]
+			id: "4FC6B34E81B2A022"
+			tasks: [{
+				id: "3A6D9B8D9AFC9AC9"
+				item: { count: 1, id: "tfmg:transistor_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			id: "73761D354244427B"
+			tasks: [{
+				id: "4119149854502EB9"
+				item: { count: 1, id: "tfmg:resistor" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["308089B0B1930273"]
+			id: "1AAF1050ACFD84FA"
+			tasks: [{
+				id: "53F42DC525E79F42"
+				item: { count: 1, id: "tfmg:etched_circuit_board" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1F48FC2DD62A21D5"]
+			id: "308089B0B1930273"
+			tasks: [{
+				id: "2F2047567E7A5F75"
+				item: { count: 1, id: "tfmg:coated_circuit_board" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4EF712572A9A1C30"]
+			id: "1F48FC2DD62A21D5"
+			tasks: [{
+				id: "0AC8BE903C00F380"
+				item: { count: 1, id: "tfmg:empty_circuit_board" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4CA11B5EC907F17D"]
+			id: "4EF712572A9A1C30"
+			tasks: [{
+				id: "6AA66F3F1CA69236"
+				item: { count: 1, id: "tfmg:plastic_sheet" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			id: "59F2DE701D6BDB3A"
+			tasks: [{
+				id: "22075DDA4A0C0356"
+				item: { count: 1, id: "tfmg:p_semiconductor" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			id: "4E44A2C9E39111DE"
+			tasks: [{
+				id: "745728CEA4EC7EF8"
+				item: { count: 1, id: "tfmg:n_semiconductor" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4AE9A6EB28BA9A66"
+				"7C50B04E607A9D72"
+			]
+			id: "75147AF23F3D630D"
+			tasks: [{
+				id: "125E19F42BD230C4"
+				item: { count: 1, id: "ae2:wireless_receiver" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"75147AF23F3D630D"
+				"762DF71FAF85B2AD"
+			]
+			id: "41CEF7A3D6CE35A3"
+			tasks: [{
+				id: "4F0B48860E131B6C"
+				item: { count: 1, id: "ae2:wireless_crafting_terminal" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75147AF23F3D630D"]
+			id: "762DF71FAF85B2AD"
+			tasks: [{
+				id: "109164F02937EC52"
+				item: { count: 1, id: "ae2:wireless_access_point" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["762DF71FAF85B2AD"]
+			id: "6EBCDBDA4C63F741"
+			tasks: [
+				{
+					count: 8L
+					id: "7C14A0DCE59E805A"
+					item: { count: 1, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+				{
+					id: "42351FFCD83AD4B0"
+					item: { count: 1, id: "ae2:quantum_link" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6AC071B5E7F249BD"
+					item: { count: 1, id: "ae2:quantum_entangled_singularity" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			id: "7AD89C12673EFE45"
+			tasks: [{
+				id: "324A52BC59D5A388"
+				item: { count: 1, id: "minecraft:beacon" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			id: "760FE73005BA64C1"
+			tasks: [{
+				id: "232484436A75FAD9"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "guide_to_crowns"
+	group: "2B45F361E31F1DD0"
+	icon: {
+		id: "crowns:turbine_stage"
+	}
+	id: "46EC46C610FCD0BE"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+}
