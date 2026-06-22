@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
     .shapeless("create:iron_sheet", ["#overgeared:smithing_hammers", "overgeared:heated_iron_ingot"])
     .damageIngredient("#overgeared:smithing_hammers");
 
+//screwdriver recipe
 event.remove({ output: 'tfmg:screwdriver'})
 event.shaped(
   Item.of('tfmg:screwdriver', 1), // arg 1: output
@@ -31,6 +32,7 @@ event.shaped(
     B: 'create:iron_sheet'
   }
 )
+//new rose quartz recipe
 event.remove({ output: 'create:rose_quartz'})
 event.custom({
   "type": "tfmg:vat_machine_recipe",
@@ -65,7 +67,7 @@ event.custom({
     }
   ]
 })
-
+//makes electron tubes more expensive
 event.remove({ output: 'create:electron_tube'})
 event.shaped(
   Item.of('create:electron_tube', 1), // arg 1: output
@@ -80,7 +82,7 @@ event.shaped(
     C: 'create:iron_sheet'
   }
 ) 
-
+//makes blaze burner take cast iron
 event.remove({ output: 'create:empty_blaze_burner'})
 event.shaped(
   Item.of('create:empty_blaze_burner', 1), // arg 1: output
@@ -133,18 +135,25 @@ event.recipes.create.sequenced_assembly(
 event.remove({ output: 'create:copper_casing'})
 event.recipes.create.item_application('create:copper_casing', ['immersiveengineering:sheetmetal_colored_gray', 'create:copper_sheet'])
 
-//event.recipes.create.item_application('create:copper_casing', ['minecraft:dirt', 'minecraft:brown_mushroom'])
+//make uranium more expensive
+event.remove({ input: 'crowns:raw_uranium'})
+event.remove({ input: 'create:crushed_raw_uranium'})
+event.remove({ input: '#c:raw_materials/uranium'})
+//
+event.recipes.create.compacting(['crowns:uranium_ingot', Fluid.of('tfmg:molten_slag', 1000)], ['12x create:crushed_raw_uranium', '4x tfmg:limesand']).superheated()
+event.recipes.create.crushing([CreateItem.of('create:crushed_raw_uranium', 0.3), CreateItem.of('create:experience_nugget', 0.15)], 'crowns:raw_uranium')
 
 
 
-event.remove({ output: 'tfmg:steel_casing'})
+//delete crafting recipe for treated wood and change how hardened wood is made
 event.remove({ output: 'tfmg:hardened_planks'})
 event.remove({ id: 'immersiveengineering:crafting/treated_wood_horizontal'})
 event.smoking('tfmg:hardened_planks', 'immersiveengineering:treated_wood_horizontal')
 
 
 
-//same for steel casings
+//same bullshit for steel casings
+event.remove({ output: 'tfmg:steel_casing'})
 event.recipes.create.sequenced_assembly(
   // Outputs:
   [
@@ -162,6 +171,7 @@ event.recipes.create.sequenced_assembly(
   ]
 ).transitionalItem('immersiveengineering:treated_wood_horizontal') // Set the transitional item
 .loops(6)
+
 //steel extravaganza
 event.remove({ output: 'tfmg:heavy_machinery_casing'})
 event.recipes.create.sequenced_assembly(
@@ -180,14 +190,6 @@ event.recipes.create.sequenced_assembly(
   ]
 ).transitionalItem('tfmg:hardened_planks') // Set the transitional item
 .loops(6)
-
-//make uranium more expensive
-event.remove({ input: 'crowns:raw_uranium'})
-event.remove({ input: 'create:crushed_raw_uranium'})
-event.remove({ input: '#c:raw_materials/uranium'})
-
-event.recipes.create.compacting(['crowns:uranium_ingot', Fluid.of('tfmg:molten_slag', 1000)], '12x create:crushed_raw_uranium').superheated()
-event.recipes.create.crushing(['create:crushed_raw_uranium', CreateItem.of('create:crushed_raw_uranium', 0.5), CreateItem.of('create:experience_nugget', 0.15)], 'crowns:raw_uranium')
 
 
 
