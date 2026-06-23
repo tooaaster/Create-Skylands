@@ -25,7 +25,7 @@
 			dependencies: [
 				"0175ADD3123E591E"
 				"4167BB254B9866CA"
-				"3FD5361805ABAD47"
+				"3480678384CC9263"
 			]
 			id: "22192BF8484BE044"
 			tasks: [{
@@ -125,7 +125,7 @@
 				item: { count: 1, id: "tfmg:limesand" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -258,7 +258,7 @@
 			dependencies: ["0A21B5CC7028A2DF"]
 			id: "3FFC2F8562204815"
 			rewards: [{
-				count: 4
+				count: 6
 				id: "7B23AD03C8F39A40"
 				item: {
 					count: 1
@@ -327,42 +327,44 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["0FB8983D6A55396A"]
-			id: "3FD5361805ABAD47"
+			dependencies: ["4A53EB3C96C67ED0"]
+			id: "123DBB4F75172301"
 			tasks: [{
-				id: "656A89E859F5A74A"
-				item: { count: 1, id: "immersiveengineering:treated_wood_horizontal" }
+				id: "250923657F3957B5"
+				item: { count: 1, id: "create:brass_funnel" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 3.5d
 			y: -1.0d
 		}
 		{
-			id: "70DD17B16E50D077"
+			dependencies: ["4A53EB3C96C67ED0"]
+			id: "33BF8D169464366F"
 			tasks: [
 				{
-					id: "648B8DC9A177580E"
+					id: "1154269587625E77"
 					item: { count: 1, id: "pipez:item_pipe" }
 					type: "item"
 				}
 				{
-					id: "3DA6B1CEFAC50277"
+					id: "66C76FBE480D4F37"
 					item: { count: 1, id: "pipez:fluid_pipe" }
 					type: "item"
 				}
-				{
-					id: "6ED7D6D6D158DBD2"
-					item: { count: 1, id: "pipez:universal_pipe" }
-					type: "item"
-				}
-				{
-					id: "48973ADB64FB0320"
-					item: { count: 1, id: "pipez:energy_pipe" }
-					type: "item"
-				}
 			]
-			x: -3.0d
-			y: -2.0d
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0FB8983D6A55396A"]
+			id: "3480678384CC9263"
+			tasks: [{
+				id: "1929BCADB2ADC24C"
+				item: { count: 1, id: "tfmg:hardened_planks" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
 		}
 	]
 }

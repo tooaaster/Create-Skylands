@@ -267,7 +267,7 @@
 				}
 			]
 			x: 3.0d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4DB4895CC52F2E6C"]
@@ -366,8 +366,8 @@
 		}
 		{
 			dependencies: [
-				"3998AD9DF132B143"
 				"16C18EFDB3C14BD9"
+				"3EBF93144461F300"
 			]
 			id: "4A402A12E77B9DE1"
 			tasks: [{
@@ -379,17 +379,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["7C35291C6C862D1A"]
-			id: "3998AD9DF132B143"
-			tasks: [{
-				id: "4579F0B1F715A96B"
-				item: { count: 1, id: "immersiveengineering:sheetmetal_colored_gray" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.5d
-		}
-		{
 			dependencies: ["4A402A12E77B9DE1"]
 			id: "0F175CBB43544327"
 			tasks: [{
@@ -399,6 +388,86 @@
 			}]
 			x: -3.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["05BC1E65B24810F7"]
+			id: "62FC1D4D8EF19510"
+			tasks: [{
+				id: "0DF79243AB1AE853"
+				item: { count: 1, id: "rubberworks:sapper" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["05BC1E65B24810F7"]
+			id: "2D9D93D796EC69D0"
+			tasks: [{
+				id: "433873C1E148DAE5"
+				item: { count: 1, id: "rubberworks:compressor" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"62FC1D4D8EF19510"
+				"2D9D93D796EC69D0"
+			]
+			id: "5A8128B540CA00FE"
+			tasks: [{
+				id: "1AADFC93AE0564E4"
+				item: { count: 1, id: "rubberworks:rubber" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5A8128B540CA00FE"]
+			id: "7EFCAD00A6FBA7AB"
+			tasks: [{
+				id: "1C5F47E117BF5072"
+				item: { count: 1, id: "create:andesite_funnel" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A8128B540CA00FE"]
+			id: "4F8062E2E7978C8D"
+			tasks: [{
+				id: "6136920984FE3F5B"
+				item: { count: 1, id: "create:belt_connector" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3254E0807CC92678"]
+			id: "3EBF93144461F300"
+			tasks: [{
+				id: "060A873D9EF7A488"
+				item: { count: 1, id: "createdeco:industrial_iron_sheet_metal" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C35291C6C862D1A"]
+			id: "3254E0807CC92678"
+			tasks: [{
+				id: "187478D67E450B31"
+				item: { count: 1, id: "createdeco:industrial_iron_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
 		}
 	]
 }

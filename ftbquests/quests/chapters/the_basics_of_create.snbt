@@ -93,59 +93,6 @@
 		}
 		{
 			icon: {
-				id: "create:zinc_ingot"
-			}
-			id: "6C9F6ED13A99B014"
-			tasks: [{
-				id: "67CC535366F15B27"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			icon: {
-				id: "minecraft:copper_ingot"
-			}
-			id: "0D687D9D0EC171F3"
-			tasks: [{
-				id: "1C70B5A0EF604180"
-				type: "checkmark"
-			}]
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"0D687D9D0EC171F3"
-				"6C9F6ED13A99B014"
-			]
-			icon: {
-				id: "create:brass_ingot"
-			}
-			id: "2ACD6C7D9C589C34"
-			tasks: [{
-				id: "1617EA39D75C1D7D"
-				type: "checkmark"
-			}]
-			x: 4.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["2ACD6C7D9C589C34"]
-			icon: {
-				id: "tfmg:casting_basin"
-			}
-			id: "4677AC77B24C5064"
-			tasks: [{
-				id: "37FEE84020AAEA4F"
-				type: "checkmark"
-			}]
-			x: 4.5d
-			y: 4.5d
-		}
-		{
-			icon: {
 				id: "minecraft:cobblestone"
 			}
 			id: "40434A8C50067417"

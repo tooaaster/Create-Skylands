@@ -17,7 +17,6 @@
 	chapter_group.2B45F361E31F1DD0.title: "Guides"
 	chapter_group.72B7C5AA4B1ACB2D.title: "Progession"
 	quest.02526B34EF26C791.quest_desc: [""]
-	quest.04CC377AD9F5B07B.quest_subtitle: "You can get alot of this by washing crushed zinc"
 	quest.05B976EA7C244AFC.quest_subtitle: "Gonna need this for the good stuff"
 	quest.06BA48DBE3713495.quest_desc: ["You can use a polarizer, or you can be super cool and blast it with lightning"]
 	quest.06BA48DBE3713495.quest_subtitle: "There's a right way, and a even more right way"
@@ -34,7 +33,14 @@
 		""
 		"Also note that if you use sails, you will not need to glue the sails together, unlike wool blocks."
 	]
-	quest.0D687D9D0EC171F3.quest_desc: ["Copper can be made from washing gravel (same as iron) or using ore excavation"]
+	quest.13DE8F33D23DB58A.quest_desc: [
+		"*theres 2 power systems: kW and FE."
+		""
+		"kW is from TFMG and is specific to the mod. kW is made from either a generator or from a rotor and stator."
+		""
+		"FE is more general and much easier to make and use. FE can be generated from an alternator or from a converter with kW."
+	]
+	quest.13DE8F33D23DB58A.quest_subtitle: "*theres 2 power systems"
 	quest.140633537C54BE12.quest_desc: ["A half an hour is a small price to pay for infinite certus quartz"]
 	quest.140633537C54BE12.quest_subtitle: "Hope you don't mind a little waiting lol"
 	quest.156E9B994039106B.quest_desc: ["Once you have your iron nuggets and andesite, there are three ways to turn it into andesite alloy"]
@@ -62,8 +68,6 @@
 	]
 	quest.294508BB1C76B21F.quest_subtitle: "Saw-stop doesn't exist here so watch your fingers"
 	quest.295CB3BE48E9FE12.quest_desc: ["This one is not acheivable early game, but is the most efficient way to get andesite alloy. First you turn the nuggets into iron ingots and melt them into molten iron, mixing that with molten andesite (also made in the foundry basin) will make 2 molten andesite alloy (which then needs to be casted) for every iron nugget and andesite."]
-	quest.2ACD6C7D9C589C34.quest_desc: ["Brass is an alloy made from mixing molten zinc and molten copper together and then casting the result."]
-	quest.2ACD6C7D9C589C34.title: "Brass Alloying"
 	quest.2C2312D2343F54B7.quest_desc: [
 		"First things first, if you want to know how any specific block works in Create, check its ponder by holding W on the item. This will give a detailed render of how it is used and it will be much more help than looking at these quests."
 		""
@@ -75,7 +79,7 @@
 	]
 	quest.2C2312D2343F54B7.quest_subtitle: "Let's Get Started!"
 	quest.2C2312D2343F54B7.title: "Create Basics"
-	quest.2D6F5CDD49B7AA9C.quest_subtitle: "I suggest getting a couple stacks of this stuff"
+	quest.2D6F5CDD49B7AA9C.quest_subtitle: "I suggest finding a couple stacks of this stuff"
 	quest.30128726582FD3C7.quest_desc: [""]
 	quest.30128726582FD3C7.quest_subtitle: "The fancy redstone coating adds two zeros to the price tag"
 	quest.301BA99F0CB16020.quest_desc: [
@@ -97,6 +101,7 @@
 		"Encasing pipes can be used to lock the configuration of a pipe. This stops any other pipes from making unwanted connections. (this can also be acheived using the screwdriver item)"
 	]
 	quest.32C7FC63AF3447EE.title: "Encasing"
+	quest.33BF8D169464366F.quest_subtitle: "Pricey, but worth it"
 	quest.34E070299A1E13FA.quest_subtitle: "A little bonus, it's on the house"
 	quest.37CC7D8DFB6B6652.quest_subtitle: "Needs a Blast Furnace"
 	quest.37FFB8DB387FDB35.quest_subtitle: "Its basically free after you get the first one"
@@ -104,7 +109,6 @@
 	quest.38BC826014653A10.quest_subtitle: "Some Lead Required"
 	quest.397CD9408D8659B6.quest_desc: ["Presses items and/or fluids using a press over a a basin."]
 	quest.397CD9408D8659B6.quest_subtitle: "Bonking so good they made another one"
-	quest.397F1E4727ADF9E3.quest_subtitle: "Easier than making a skeleton farm, I think..."
 	quest.399B067B48D4677C.quest_desc: ["These are nice for putting all of your liquid catalysts in to contain them"]
 	quest.399B067B48D4677C.title: "Catalysts"
 	quest.3B045CB00003B647.quest_desc: ["Presses items on the ground beneath it or on a depot beneath it. Pretty self-explainitory"]
@@ -124,8 +128,6 @@
 	quest.434363C58B6C8A1B.title: "Endstone/Levitite Loop"
 	quest.44C3FA5A18CD29E0.quest_desc: ["Deploys and item onto another item on a depot/belt beneath it. This consumes the item in the deployers hand. Can also place blocks and attack mobs."]
 	quest.44C3FA5A18CD29E0.quest_subtitle: "Does all the handy work you don't want to"
-	quest.4677AC77B24C5064.quest_desc: ["The resulting molten brass needs pumped into a casting basin and is then cooled into heated ingots. Those heated ingot can be dropped into water to be instantly cooled into normal brass ingots. Also, in order to get molten zinc/copper, you need to melt the repective ingot in a heated foundry basin."]
-	quest.4677AC77B24C5064.title: "Casting the Brass"
 	quest.485DBAF8764766A9.title: "Mixing"
 	quest.4C0583E951ED8616.quest_desc: [""]
 	quest.4EF712572A9A1C30.quest_subtitle: "Made from distilling naptha and processing the products"
@@ -148,7 +150,7 @@
 	quest.63D33F15C859FBE1.quest_desc: ["Polishes items when you put the sandpaper in your offhand and hold right-click the item you want to polish. Can also be put in a deployer to quickly polish items"]
 	quest.63D33F15C859FBE1.quest_subtitle: "idk what joke to make here"
 	quest.64832D20F7BEF53B.quest_desc: [
-		"The only way to turn magnetic alloy into magnets in the beginning is by striking it with lightning, which is a pain in the butt so heres one lightning, on the house. "
+		"The only way to turn magnetic alloy into magnets in the beginning is by striking it with lightning, but I won't make you wait for a thunderstorm. so here's one lightning strike from yours, truly."
 		""
 		"Keep in mind, this lightning strikes ALL items in a 5 block radius, so don't have anything important around."
 	]
@@ -157,7 +159,6 @@
 	quest.65EDFA6368867BDE.title: "Aeronautics Basics"
 	quest.697791ED7A5B4F74.quest_desc: ["Iron is made from washing gravel"]
 	quest.697D3C47C0C7CD3A.quest_subtitle: "What kind of tech modpack would this be without oil processing?"
-	quest.6C9F6ED13A99B014.quest_desc: ["Zinc is generated from ore excavation drills or by mining its ore."]
 	quest.6EBCDBDA4C63F741.quest_desc: ["The condition is that the chunks that its in have to be loaded btw."]
 	quest.6EBCDBDA4C63F741.quest_subtitle: "Infinite Range! (some conditions may apply)"
 	quest.70B73294857094C1.quest_desc: [
@@ -174,7 +175,6 @@
 		""
 		"The minimum size (level 1) is four fluid tanks, one steam engine, and one blaze burner. The maximum size is level 9 (54 tanks) for normal heating or level 18 (108 tanks) if you are superheating."
 	]
-	quest.70DD17B16E50D077.quest_subtitle: "add recipes and get that one texture pack"
 	quest.7126751C7CC05ACC.quest_desc: ["Andesite is made from compacting flint and gravel"]
 	quest.715D20C0D833733A.quest_desc: [
 		"Fans blow air thorugh a medium to affect items in front of them. There are four kinds of blowing: Washing, Blasting, Smoking, and Haunting."
@@ -206,15 +206,12 @@
 	task.0AA67EC02BA03C26.title: "Iron Generation"
 	task.10723D947DE707AF.title: "Andesite Alloy"
 	task.153F01633A50307C.title: "Casing"
-	task.1617EA39D75C1D7D.title: "Brass"
-	task.1C70B5A0EF604180.title: "Copper Generation"
 	task.1E4C3E9721CBC2BD.title: "SU Generation"
 	task.1E93DAE5474BAE87.title: "Heating"
 	task.22A3B103A89B7464.title: "Crafting"
 	task.232484436A75FAD9.title: "The Void"
 	task.26767E21138F2AB8.title: "Processing in Create"
 	task.3650A664994FF70D.title: "Cobblestone generation"
-	task.37FEE84020AAEA4F.title: "Only Alloying srry not srry lol"
 	task.3C4A4DEC6CBCE741.title: "Milling"
 	task.3E8AA23E4B7597FF.title: "Andesite Generation"
 	task.41E9F73EA58FFB4B.title: "Pressing"
@@ -225,13 +222,13 @@
 	task.5F5B1726D3627259.title: "Crushing"
 	task.60FA69BAA804159E.title: "Waterwheels"
 	task.66AC10F84C1586FC.title: "One Free Lightning, on the House"
-	task.67CC535366F15B27.title: "Zinc Generation"
 	task.69A38833655CA5FC.title: "Mechanical Crafting"
 	task.6B810158B1FC74EA.title: "Sanding/Polishing"
 	task.6C70683331C6508A.title: "Blowing"
 	task.6D1872A5565C94BB.title: "Alloying"
 	task.712DE5D82135B248.title: "Mixing"
 	task.75B4D39681FC4E40.title: "Getting Started With Aeronautics"
+	task.778F85B433697161.title: "Powah *"
 	task.78D696AD80EEB108.title: "Mixing"
 	task.7AB5F16088770BBD.title: "SequentiaCrafting"
 }
