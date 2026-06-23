@@ -1,0 +1,542 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steel_age"
+	group: "72B7C5AA4B1ACB2D"
+	icon: {
+		id: "tfmg:steel_ingot"
+	}
+	id: "170F20962B723A67"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["64A55D41E91DEF9B"]
+			id: "38D943DB633AB2B0"
+			tasks: [{
+				id: "1FD0D438722F4F29"
+				item: { count: 1, id: "tfmg:steel_ingot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"126B609CE6793ACB"
+				"6D77265C56BD17A1"
+			]
+			id: "21885DEF94D48FE0"
+			tasks: [{
+				id: "473CD8BFCCF71BE0"
+				item: { count: 1, id: "tfmg:aluminum_ingot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1B1BACD7324537A2"]
+			id: "126B609CE6793ACB"
+			tasks: [{
+				id: "3D550BEAD2DF53C6"
+				item: { count: 1, id: "tfmg:steel_chemical_vat" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"10EA0423A68FE25E"
+				"1B1BACD7324537A2"
+				"7CE7773EC06C96EB"
+			]
+			id: "6D77265C56BD17A1"
+			tasks: [
+				{
+					count: 2L
+					id: "0233F34AB2D2EFC5"
+					item: { count: 1, id: "tfmg:electrode_holder" }
+					type: "item"
+				}
+				{
+					id: "7C31A58F8FF99AA6"
+					item: { count: 1, id: "tfmg:copper_electrode" }
+					type: "item"
+				}
+				{
+					id: "599D2DDFCD5282D2"
+					item: { count: 1, id: "tfmg:zinc_electrode" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1C7DD5BF3BF74F4E"
+				"16FD6A93CD61E2A3"
+			]
+			id: "10EA0423A68FE25E"
+			tasks: [{
+				id: "7D3CA61577F27517"
+				item: { count: 1, id: "tfmg:heavy_machinery_casing" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38D943DB633AB2B0"]
+			id: "1C7DD5BF3BF74F4E"
+			tasks: [{
+				id: "0785FF48C5A8C713"
+				item: { count: 1, id: "tfmg:heavy_plate" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C0583E951ED8616"]
+			id: "1B1BACD7324537A2"
+			tasks: [
+				{
+					id: "664AFAF2EAD9ECAF"
+					item: { count: 1, id: "tfmg:lead_ingot" }
+					type: "item"
+				}
+				{
+					id: "32842289F3DA56E3"
+					item: { count: 1, id: "tfmg:nickel_ingot" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F29669FE618C963"]
+			id: "4C0583E951ED8616"
+			tasks: [{
+				id: "3BF52C5122E1E978"
+				item: { count: 1, id: "tfmg:slag" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["25F396794EAF12A2"]
+			id: "0F29669FE618C963"
+			tasks: [{
+				id: "614699AD6DFD2A54"
+				item: { count: 1, id: "tfmg:slag_block" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "25F396794EAF12A2"
+			tasks: [{
+				id: "0AE2ADB7ECC4D69D"
+				item: { count: 1, id: "tfmg:molten_slag_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["38D943DB633AB2B0"]
+			id: "16FD6A93CD61E2A3"
+			tasks: [{
+				id: "6893C48242689AB6"
+				item: { count: 1, id: "tfmg:steel_casing" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["56FAEC121623ACC1"]
+			id: "0DBBC8C2695D9C48"
+			tasks: [
+				{
+					id: "3148437209CAC2F6"
+					item: { count: 1, id: "tfmg:industrial_mixer" }
+					type: "item"
+				}
+				{
+					id: "16DFBDB4793E5955"
+					item: { count: 1, id: "tfmg:centrifuge" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2465DFAF4338E8A4"]
+			id: "56FAEC121623ACC1"
+			tasks: [{
+				id: "64576C33002C1B12"
+				item: { count: 1, id: "tfmg:steel_mechanism" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["38D943DB633AB2B0"]
+			id: "2465DFAF4338E8A4"
+			tasks: [
+				{
+					id: "3E2B36819C10F94C"
+					item: { count: 1, id: "tfmg:steel_cogwheel" }
+					type: "item"
+				}
+				{
+					id: "6276006A206E5A25"
+					item: { count: 1, id: "tfmg:large_steel_cogwheel" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"06BA48DBE3713495"
+				"62B0F22EBB53B98C"
+				"4B7010B4897C0BC7"
+			]
+			id: "7CE7773EC06C96EB"
+			tasks: [{
+				id: "5E3091E6E6E00830"
+				item: { count: 1, id: "tfmg:generator" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["10EA0423A68FE25E"]
+			id: "4B7010B4897C0BC7"
+			tasks: [{
+				id: "6B7B90E04C62AD7D"
+				item: { count: 1, id: "tfmg:winding_machine" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"02526B34EF26C791"
+				"64832D20F7BEF53B"
+			]
+			dependency_requirement: "one_completed"
+			id: "06BA48DBE3713495"
+			tasks: [{
+				id: "1C2AD66080C25683"
+				item: { count: 1, id: "tfmg:magnet" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1C7DD5BF3BF74F4E"]
+			id: "62B0F22EBB53B98C"
+			tasks: [{
+				id: "5DDBD63F5B2FD2E4"
+				item: { count: 1, id: "tfmg:capacitor_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37CC7D8DFB6B6652"]
+			id: "02526B34EF26C791"
+			tasks: [{
+				count: 32L
+				id: "28F1DEA6CF186F3A"
+				item: { count: 1, id: "tfmg:magnetic_alloy_ingot" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			id: "37CC7D8DFB6B6652"
+			tasks: [{
+				id: "1D40DDE47C994CE1"
+				item: { count: 1, id: "tfmg:silicon_ingot" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"734D4570D8D02431"
+				"6D0B393883407581"
+			]
+			id: "1248E7B54B1BFD99"
+			shape: "gear"
+			tasks: [{
+				id: "07F84C5E88F310BB"
+				item: { count: 1, id: "ae2:controller" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0ADD8D15A03AA4B2"
+				"37FFB8DB387FDB35"
+			]
+			id: "6D0B393883407581"
+			tasks: [{
+				id: "0701E9C0A1EFF0BC"
+				item: { count: 1, id: "createpropulsion:platinum_casing" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3D7FAEAEA19A71F1"
+				"29E9B68C6ED988EB"
+				"27D2A2AB63B4CC70"
+			]
+			id: "734D4570D8D02431"
+			tasks: [{
+				id: "4A355747F89D4CC0"
+				item: { count: 1, id: "kubejs:calculation_mechanism" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["42293018DE870E8D"]
+			id: "3D7FAEAEA19A71F1"
+			tasks: [{
+				id: "67F83D8390ED2EC1"
+				item: { count: 1, id: "kubejs:incomplete_calculation_mechanism" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["38D943DB633AB2B0"]
+			id: "42293018DE870E8D"
+			tasks: [{
+				id: "3706C1E038E285A3"
+				item: { count: 1, id: "kubejs:mech_cast" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"753008EC570862DB"
+				"4BC3DAC36B048AD0"
+			]
+			id: "29E9B68C6ED988EB"
+			tasks: [{
+				id: "605987CC16C5E5E8"
+				item: { count: 1, id: "ae2:charged_certus_quartz_crystal" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["753008EC570862DB"]
+			id: "0ADD8D15A03AA4B2"
+			tasks: [{
+				id: "26CA29B626A64B23"
+				item: { count: 1, id: "ae2:cut_quartz_slab" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			id: "753008EC570862DB"
+			tasks: [{
+				id: "6C8B11D5765F04CE"
+				item: { count: 1, id: "ae2:certus_quartz_crystal" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2F8FF811E0C44259"]
+			id: "649AB6FD28D7736E"
+			shape: "gear"
+			tasks: [{
+				id: "3E8672551CBE9346"
+				item: { count: 1, id: "ae2:crafting_terminal" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["753008EC570862DB"]
+			id: "0E17A4D1DE301761"
+			tasks: [{
+				id: "7DBD123AFF6DD6EB"
+				item: { count: 1, id: "ae2:quartz_fiber" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0E17A4D1DE301761"]
+			id: "2F8FF811E0C44259"
+			tasks: [{
+				id: "27CF8A88094AAC75"
+				item: { count: 1, id: "ae2:fluix_glass_cable" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			id: "27D2A2AB63B4CC70"
+			tasks: [{
+				id: "53F2F755F56FC22C"
+				item: { count: 1, id: "ae2:calculation_processor" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4BC3DAC36B048AD0"]
+			id: "37FFB8DB387FDB35"
+			tasks: [{
+				id: "306ED1EFBF069650"
+				item: { count: 1, id: "ae2:sky_stone_block" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["02526B34EF26C791"]
+			id: "64832D20F7BEF53B"
+			rewards: [{
+				command: "/execute at @e[type=minecraft:item, distance=..5] run summon lightning_bolt"
+				id: "312AAF1FF91C00B9"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				id: "66AC10F84C1586FC"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["64832D20F7BEF53B"]
+			icon: {
+				id: "minecraft:lightning_rod"
+			}
+			id: "5A32B09DE04B593E"
+			rewards: [{
+				command: "/execute at @e[type=minecraft:item, distance=..5] run summon lightning_bolt"
+				id: "05D01ED47E28299D"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "17CF246D4D6C5326"
+				item: { count: 1, id: "numismatics:cog" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"734D4570D8D02431"
+				"6D0B393883407581"
+			]
+			hide_dependency_lines: true
+			id: "12CA918D6F7D7C02"
+			shape: "gear"
+			tasks: [{
+				id: "5240A4CC5A88B833"
+				item: { count: 1, id: "ae2:storage_bus" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"753008EC570862DB"
+				"29E9B68C6ED988EB"
+			]
+			id: "3F87A6F278AF4A08"
+			tasks: [{
+				id: "505056C542DBC17C"
+				item: { count: 1, id: "ae2:flawed_budding_quartz" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3F87A6F278AF4A08"]
+			id: "140633537C54BE12"
+			tasks: [{
+				id: "673E52EF54D62DEA"
+				item: { count: 1, id: "ae2:flawless_budding_quartz" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"06BA48DBE3713495"
+				"13DE8F33D23DB58A"
+			]
+			id: "4BC3DAC36B048AD0"
+			tasks: [{
+				id: "78877C49F970B5DF"
+				item: { count: 1, id: "createaddition:tesla_coil" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "13DE8F33D23DB58A"
+			tasks: [{
+				id: "778F85B433697161"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+	]
+}

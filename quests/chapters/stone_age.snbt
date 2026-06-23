@@ -1,0 +1,33 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stone_age"
+	group: "72B7C5AA4B1ACB2D"
+	icon: {
+		id: "minecraft:stone"
+	}
+	id: "74692A3C9E4BE7C5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "634DA0EC7EDE03F1"
+			tasks: [{
+				id: "059B91FBAE85ADEA"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "6FCEA1BBB5242ACE"
+			tasks: [{
+				id: "24618B6ABC9C274B"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.5d
+		}
+	]
+}
